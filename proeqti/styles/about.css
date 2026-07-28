@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about-section {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e5e5e5; 
+  margin-bottom: 60px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  padding-bottom: 20px; 
+  border-bottom: 1px solid #e5e5e5; 
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-text p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.careers-section {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.careers-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.careers-header h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.careers-header p {
+  font-size: 13px;
+  color: #444;
+}
+
+.careers-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.form-group input,
+.form-group select {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  padding: 6px 0;
+  font-size: 13px;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.select-wrapper,
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.select-arrow,
+.input-with-icon .icon {
+  position: absolute;
+  right: 0;
+  pointer-events: none;
+  font-size: 12px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  background-color: #6c2bd9;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 40px;
+  font-size: 13px;
+  cursor: pointer;
+  transition:  0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #581c87;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-grid,
+  .careers-form {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .form-actions {
+    justify-content: center;
+  }
+}
