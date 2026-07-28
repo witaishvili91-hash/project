@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+.footer-svg{
+    width:80px;
+    height:430px;
+    flex-shrink:0;
+    background-image: url(./iamges/footer_image.png);
+}
+.shop-all-containre {
+     background-color: #e0e0e0;;
+  display: grid;
+  grid-template-columns: 240px 1fr; 
+  gap: 30px;
+}
+.sidebar {
+  width: 220px;
+  background-color: #e8e8e8;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.sidebar-group {
+  margin-bottom: 30px;
+}
+
+.sidebar-title {
+  font-size: 14px;
+  font-weight: normal;
+  color: #111;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc; 
+}
+
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  font-size: 11px;
+  color: #333;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.category-list li:hover {
+  color: #000;
+}
+
+.category-list li.active {
+  font-weight: bold;
+  color: #000;
+}
+
+
+.filter-accordion {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: #333;
+  cursor: pointer;
+}
+
+.accordion-icon {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.accordion-content {
+  margin-top: 15px;
+}
+
+
+.price-slider {
+  position: relative;
+  height: 2px;
+  background-color: #000;
+  margin: 10px 0;
+}
+
+.slider-thumb {
+  position: absolute;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-thumb.left {
+  left: 0;
+}
+
+.slider-thumb.right {
+  right: 0;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #333;
+  margin-top: 12px;
+}
+
+.category-list a {
+  text-decoration: none;
+  color: inherit;
+  display: block; 
+}
+
+
+.products-section {
+    background-color: #e8e8e8;
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  font-size: 11px;
+  color: #555;
+}
+
+.sort-by select {
+  border: none;
+  background: transparent;
+  font-size: 11px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+.main-container {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.products-grid {
+  display: grid;
+ 
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.product-card {
+  width: 100%;
+  background-color: #ffffff; 
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* SALE წითელი ბეჯი */
+.badge.sale {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #e52e2e; 
+  color: #ffffff;            
+  font-size: 9px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 12px;       
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.product-image {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.product-info {
+  padding: 8px 10px 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  background-color: #e8e8e8;
+}
+
+
+.product-title a {
+  text-decoration: none;
+  color: #111111; 
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.product-title a:hover {
+  color: #6c2bd9;
+}
